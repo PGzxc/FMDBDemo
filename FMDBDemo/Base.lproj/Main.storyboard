@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oo7-FG-a8S">
+                                <rect key="frame" x="166" y="107" width="82" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="创建表"/>
+                                <connections>
+                                    <action selector="createTableBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="qy6-fz-Gih"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rY-la-dFG">
+                                <rect key="frame" x="166" y="157" width="82" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="插入数据"/>
+                                <connections>
+                                    <action selector="insertTableBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="HZw-lg-7ry"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdT-0H-uNG">
+                                <rect key="frame" x="166" y="210" width="82" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="查询数据"/>
+                                <connections>
+                                    <action selector="selectTableBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="ghH-Ky-MQC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZV-5R-eUd">
+                                <rect key="frame" x="166" y="259" width="82" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="更新数据"/>
+                                <connections>
+                                    <action selector="updateTableBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="h8u-MA-Sq4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFn-Jm-noG">
+                                <rect key="frame" x="166" y="317" width="82" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="删除表"/>
+                                <connections>
+                                    <action selector="deleteTableBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="k1f-ae-RvY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VdT-0H-uNG" firstAttribute="width" secondItem="oo7-FG-a8S" secondAttribute="width" id="0JD-pb-QsC"/>
+                            <constraint firstItem="2rY-la-dFG" firstAttribute="width" secondItem="oo7-FG-a8S" secondAttribute="width" id="20n-SP-FyN"/>
+                            <constraint firstItem="2rY-la-dFG" firstAttribute="height" secondItem="oo7-FG-a8S" secondAttribute="height" id="3yD-RU-Rpv"/>
+                            <constraint firstItem="TZV-5R-eUd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="259" id="Ach-rC-eZQ"/>
+                            <constraint firstItem="2rY-la-dFG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Afg-bL-9vc"/>
+                            <constraint firstItem="DFn-Jm-noG" firstAttribute="width" secondItem="oo7-FG-a8S" secondAttribute="width" id="Bg7-e3-CzZ"/>
+                            <constraint firstItem="TZV-5R-eUd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IVW-pX-SW2"/>
+                            <constraint firstItem="TZV-5R-eUd" firstAttribute="height" secondItem="oo7-FG-a8S" secondAttribute="height" id="M3p-iH-H0e"/>
+                            <constraint firstItem="TZV-5R-eUd" firstAttribute="top" secondItem="VdT-0H-uNG" secondAttribute="bottom" constant="18" id="Tok-lP-aUM"/>
+                            <constraint firstItem="VdT-0H-uNG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W8r-xW-2tA"/>
+                            <constraint firstItem="DFn-Jm-noG" firstAttribute="height" secondItem="oo7-FG-a8S" secondAttribute="height" id="gGQ-sD-NLP"/>
+                            <constraint firstItem="DFn-Jm-noG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hen-Wh-o4g"/>
+                            <constraint firstItem="2rY-la-dFG" firstAttribute="top" secondItem="oo7-FG-a8S" secondAttribute="bottom" constant="19" id="idj-hd-sNQ"/>
+                            <constraint firstItem="VdT-0H-uNG" firstAttribute="top" secondItem="2rY-la-dFG" secondAttribute="bottom" constant="22" id="kYD-4w-b87"/>
+                            <constraint firstItem="DFn-Jm-noG" firstAttribute="top" secondItem="TZV-5R-eUd" secondAttribute="bottom" constant="27" id="lYi-lZ-AJ0"/>
+                            <constraint firstItem="VdT-0H-uNG" firstAttribute="height" secondItem="oo7-FG-a8S" secondAttribute="height" id="rYl-Kb-53T"/>
+                            <constraint firstItem="oo7-FG-a8S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sB3-Zj-Sf7"/>
+                            <constraint firstItem="TZV-5R-eUd" firstAttribute="width" secondItem="oo7-FG-a8S" secondAttribute="width" id="zha-BF-uja"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
